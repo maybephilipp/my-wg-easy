@@ -2,7 +2,7 @@ services:
   wg-easy:
     environment:
       - WG_HOST=$WG_HOST
-      - PASSWORD=$WG_PASSWORD
+      - PASSWORD_HASH=$WG_PASSWORD_HASH
     image: ghcr.io/wg-easy/wg-easy
     container_name: wg-easy
     hostname: wg-easy
